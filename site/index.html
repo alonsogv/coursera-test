@@ -1,9 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<!-- These are meta data, and will not be
+	displayed to the user.
+	Always write the title, if not, the head will
+	be invalid. The meta tells what  character set
+	will be used. -->
+	<meta charset="utf-8">
 	<title>Hello Coursera!</title>
 </head>
 <body>
+<!-- The body is the content 
+	of what is visible to the user -->
 <h1>Hello Coursera! How you doin´?</h1>
 <p>This is just an example of how a paragraph works.</p>
 <p>This is another paragraph, for example.</p>
@@ -13,5 +21,36 @@ I'm just looking if this works as well... <br>
 Finally, this is a an horizontal rule </p>
 <hr>  
 <p> The horizontal rule is just that...an horizontal line</p>
+<hr>
+<p> The div element stands for division, and the span element stands for span. <br> 
+The div element is your most generic block-level element, and the span is your super generic, inline element. </p>
+
+<div>*** DIV 1: Some content here ***</div>
+  <div>*** DIV 2: Following right after div 1 ***</div>
+  <span>*** SPAN 1: Following right after div 2 ***</span>
+  <div>
+    *** DIV 3: Following right after span 1 
+    <span>*** SPAN 2: INSIDE div 3 ***</span>
+    Continue content of div 3 ***
+<p> And even though span is an inline element, since DIV 2 requires that it be on it's own line. It pushes the next inline element to it's own line as well. And this is exactly what happens with DIV 3. Even though span is an inline element, technically speaking the tags shouldn't go anywhere but right behind SPAN 1. But since DIV 3 is a block level element it requires it's own line so it's get pushed to the next line to be by itself. Now the SPIN 2 tag is sitting inside the DIV 3, and since it's an inline element it doesn't cause any more formatting. And it just sits right here inside the DIV 3 without requiring a new line. </p>
+<p> Conclusion: The DIV element is never allowed as a child element of SPAN. It only works the other way around</p>
+<hr>
+Here you can find more information on the 7 types of content in html: <br>
+https://www.w3.org/TR/2011/WD-html5-author-20110809/content-models.html <hr>
+
+<h2>Semantic html element</h2>
+<p> Element that implies some meaning to the content. <br>
+*Human and/or machine can understand meaning of content surrounded by a semantic element better </p>
+<p> Let's see an example of that: <hr> </p>
+<h1>This is the Main Heading</h1>
+  <h2>Subheading 2</h2>
+  <h3>Subheading 3</h3>
+  <h4>Subheading 4</h4>
+  <h5>Subheading 5</h5>
+  <h6>Subheading 6</h6>
+<hr>
+  <p> These elements are only meant to convey structure of your HTML page, nothing more. With CSS, any regular development can be styled to look like any one of these heading tags. So, why not just use a div? Because if we did, we would lose the meaning of what a heading is. Second, something that's marked h1 is obviously the most important and generalized description of the content of this page. <br>
+  ES UNA CONVENCIÓN MUUUUY IMPORTANTE, particularmente para el h1. </p>
+
 </body>
 </html>
